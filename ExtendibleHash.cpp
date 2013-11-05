@@ -1,10 +1,11 @@
 #include "ExtendibleHash.h"
+using namespace std;
 
 
 
-int Ehash(int value, int bits)
+int Ehash(int value, int bits)  //oh a non member function
 {
-  return value >> (18 - bits) ;
+  return value >> (18 - bits);
 } // Ehash()
 
 ExtendibleHash::ExtendibleHash(const int & notFound, int b, int LSize) :
@@ -15,7 +16,7 @@ ExtendibleHash::ExtendibleHash(const int & notFound, int b, int LSize) :
 
 void ExtendibleHash::insert(const int &object)
 {
-
+	
 } // insert()
 
 
@@ -26,6 +27,7 @@ void ExtendibleHash::remove(const int &object)
 
 const int & ExtendibleHash::find(const int &object)
 {
+	return 0;
 }  // find()
 
 
