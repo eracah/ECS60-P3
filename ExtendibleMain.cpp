@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
-#include <cstring>
+#include <cstring> //clever so he can use strtok
 #include "ExtendibleHash.h"
 
 using namespace std;
