@@ -29,12 +29,16 @@ int main(int argc, char* argv[])
       case 'd' : hash.remove(value); break;
       case 'f' :
         inf >> value2;
-        if(value2 != hash.find(value))
+        if(value2 != hash.find(value)) //??? what?? if -1 doesnt equal
           cout << "Bad find: Sought:" << value << " returned: " << hash.find(value) << endl;
-        break;
+        else
+          cout << "Good find: Sought: " << value << " returned: "<< hash.find(value) << endl;
+        
       case 'b' :
         if(value != hash.GetBits())
           cout << "Bad bits: Expected: " << value << " got: " << hash.GetBits() << endl;
+        else
+          cout << "Good bits: " << hash.GetBits() << endl;
     } // switch
   } // while more in file
   return 0;
