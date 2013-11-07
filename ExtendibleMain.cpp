@@ -33,12 +33,14 @@ int main(int argc, char* argv[])
           cout << "Bad find: Sought:" << value << " returned: " << hash.find(value) << endl;
         else
           cout << "Good find: Sought: " << value << " returned: "<< hash.find(value) << endl;
+        break;
         
       case 'b' :
         if(value != hash.GetBits())
           cout << "Bad bits: Expected: " << value << " got: " << hash.GetBits() << endl;
         else
           cout << "Good bits: " << hash.GetBits() << endl;
+        break;
     } // switch
   } // while more in file
   return 0;
