@@ -2,14 +2,16 @@
   #define EXTENDIBLE_HASH_H
 
 #include "ExtendibleLeaf.h"
-#include "vector"
-
+#include <vector>
+using namespace std;
 class ExtendibleHash
 {
   vector<ExtendibleLeaf *> Directory;
   int bits;
-  int size;
   int LeafSize;
+  int notFound;
+  int soughtValue;
+  void updatePtr(ExtendibleLeaf* newLeaf);
 
 public:
   ExtendibleHash(const int & notFound, int s, int LSize = 2);
