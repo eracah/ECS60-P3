@@ -18,7 +18,7 @@ ExtendibleHash::ExtendibleHash(const int & notFound, int b, int LSize):
 	Directory.resize(1 << bits);
 
 	//set all ptrIndexs in directory to firstLeafPtr
-	for(ptrIndex = 0; ptrIndex < Directory.size(); ptrIndex++)
+	for(ptrIndex = 0; ptrIndex < (int)Directory.size(); ptrIndex++)
 	{
 		Directory[ptrIndex] = firstLeafPtr;
 	}
