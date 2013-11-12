@@ -17,8 +17,8 @@ public:
   ExtendibleHash(const int & notFound, int s, int LSize = 2);
   void insert(const int &object);
   void remove(const int &object);
-  const int & find(const int &object); //why the reference here? save from copying?
-  void split(const int &object);   //resizes vector?????????
+  const int & find(const int &object); 
+  void split(const int &object);   
   int GetBits()const {return bits;}
 
 }; // class ExtendibleHashing
